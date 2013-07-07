@@ -49,18 +49,18 @@
 			<artifactId>ehcache-core</artifactId>
 			<version>2.2.0</version>
 		</dependency>
-		<!--  Struts2 framework -->
+		<!-- Struts2 framework -->
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
 			<version>2.3.15</version>
-</dependency>
-<!-- log4j  -->
-<dependency>
-	<groupId>log4j</groupId>
-	<artifactId>log4j</artifactId>
-	<version>1.2.14</version>
-</dependency>
+		</dependency>
+		<!-- log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.14</version>
+		</dependency>
 	</dependencies>
 	<repositories>
 		<repository>
