@@ -3,10 +3,10 @@ package com.happy.feet.withprejudice.creator;
 public class Attribute
 {
   String description;
-  double value;
+  long value;
   Enum<Type> type;
-  double minValue;
-  double maxValue;
+  long minValue;
+  long maxValue;
   int cost;
   
   public String getDescription()
@@ -17,11 +17,11 @@ public class Attribute
   {
     this.description = description;
   }
-  public double getValue()
+  public long getValue()
   {
     return value;
   }
-  public void setValue(double value)
+  public void setValue(long value)
   {
     this.value = value;
   }
@@ -33,19 +33,19 @@ public class Attribute
   {
     this.type = type;
   }
-  public double getMinValue()
+  public long getMinValue()
   {
     return minValue;
   }
-  public void setMinValue(double minValue)
+  public void setMinValue(long minValue)
   {
     this.minValue = minValue;
   }
-  public double getMaxValue()
+  public long getMaxValue()
   {
     return maxValue;
   }
-  public void setMaxValue(double maxValue)
+  public void setMaxValue(long maxValue)
   {
     this.maxValue = maxValue;
   }
