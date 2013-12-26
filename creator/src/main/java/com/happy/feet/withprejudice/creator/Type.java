@@ -1,0 +1,6 @@
+package com.happy.feet.withprejudice.creator;
+
+public enum Type
+{
+  POSITIVE,NEGATIVE,MENTAL,PHYSICAL,EDGE,ESSENCE,MAGIC,RESONANCE,INITIATIVE,ACTIVE,KNOWLEDGE,LANGUAGE;
+}
