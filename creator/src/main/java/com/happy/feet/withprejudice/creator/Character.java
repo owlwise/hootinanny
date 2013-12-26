@@ -6,7 +6,7 @@ public class Character
 {
   String name;
   Enum<MetaType> race;
-  List<Quality> positiveQualities;
+  List<Quality> qualities;
   List<Attribute> attributes;
   List<Skill> skills;
   
@@ -26,13 +26,13 @@ public class Character
   {
     this.race = race;
   }
-  public List<Quality> getPositiveQualities()
+  public List<Quality> getQualities()
   {
-    return positiveQualities;
+    return qualities;
   }
-  public void setPositiveQualities(List<Quality> positiveQualities)
+  public void setQualities(List<Quality> qualities)
   {
-    this.positiveQualities = positiveQualities;
+    this.qualities = qualities;
   }
   public List<Attribute> getAttributes()
   {
