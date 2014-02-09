@@ -91,7 +91,7 @@ public class TestCharacter
   }
 
   @Test
-  public final void testGetSkills()
+  public final void testSkills()
   {
     Character testCharacter = getDwarfWeaponsExpert();
     assertSame("Should have 11 skills",11,testCharacter.skills.size());
