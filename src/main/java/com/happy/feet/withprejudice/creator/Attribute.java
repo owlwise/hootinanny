@@ -1,7 +1,21 @@
 package com.happy.feet.withprejudice.creator;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+
+@Entity
+@Table( name = "attribute" )
 public class Attribute
 {
+  @Id
+  @GeneratedValue(generator="increment")
+  @GenericGenerator(name="increment", strategy = "increment")
+  long attributeId;
+
   String description;
   long value;
   Enum<Type> type;
