@@ -1,22 +1,6 @@
-<!doctype html>
-<html ng-app>
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body>
-  	<div class="headerImage">Header Image Here eventually...</div>
-    <h2>Shadow Run Character Generator</h2>
-    <div ng-controller="main">
-    <div ng-hide="showGenerator">
-    	<ul class="navBar">
-    		<li><span class="navButton" ng-click="generateCharacter()">Create New</span></li>
-    		<li><span class="navButton">Edit Character</span></li>
-    	</ul>
-    </div>
-    <div ng-show="showGenerator">
-    	<span class="error">{{error}}</span>
+<div ng-controller="charGenCtrl">
+	CHARGEN!!!!
+	<div>
     	<ul>
     		<li><span ng-show="step1.active" class="genNavActive">Select MetaType</span><span ng-hide="step1.active" class="genNavInactive">Select MetaType</span></li>
     		<li><span ng-show="step2.active" class="genNavActive">Select Qualities</span><span ng-hide="step2.active" class="genNavInactive">Select Qualities</span></li>
@@ -25,8 +9,12 @@
     		<li><span ng-show="step5.active" class="genNavActive">Gear Up</span><span ng-hide="step5.active" class="genNavInactive">Gear Up</span></li>
     		<li><span ng-show="step6.active" class="genNavActive">Customize</span><span ng-hide="step6.active" class="genNavInactive">Customize</span></li>
     	</ul>
-    	<div class="btnPanel"><a class="btn" ng-click="previous()">Previous</a><a class="btn" ng-click="next()">Next</a></div>
-    	
+    </div>
+    <div>
+    	<a class="btn" ng-click="previous()">Previous</a>
+    	<a class="btn" ng-click="next()">Next</a>
+    </div>
+    <div>
     	<div class="dataContainer" ng-show="step1.active">
     		<span class="label">
     			Build Points: {{bp}}
@@ -117,7 +105,8 @@
     		</table>
     	</div>
     </div>
- 
+    
+    <div>
+    	<span class="error">{{error}}</span>
     </div>
-  </body>
-</html>
+</div>
