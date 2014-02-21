@@ -8,14 +8,35 @@
 	<description>Character generator for shadowrun game</description>
 
 	<dependencies>
+		<!--  Hibernate 4.3 -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>4.3.0.Final</version>
+		</dependency>
+		
+		<!--  Hibernate annotations depenancy part 1 -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-annotations</artifactId>
+			<version>3.5.6-Final</version>
+		</dependency>
+            
+		<!--  Hibernate annotaions dependancy part 2-->
+		<dependency>
+        	<groupId>javax.persistence</groupId>
+        	<artifactId>persistence-api</artifactId>
+        	<version>1.0</version>
+      	</dependency>            	
+      	
+      	<!-- hibernate annotations dependancy part 3 -->
+      	<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-envers</artifactId>
+			<version>4.3.0.Final</version>
+		</dependency>
 
 		<!-- JUnit testing framework -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
 
 		<!-- Spring framework -->
 		<dependency>
@@ -38,28 +59,23 @@
 			<version>5.1.9</version>
 		</dependency>
 
-		<!-- Hibernate framework -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>3.6.0.Final</version>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.ehcache</groupId>
-			<artifactId>ehcache-core</artifactId>
-			<version>2.2.0</version>
-		</dependency>
-		<!-- Struts2 framework -->
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-core</artifactId>
-			<version>2.3.15</version>
-		</dependency>
 		<!-- log4j -->
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.14</version>
+		</dependency>
+		
+		<!--  JUnit4  -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-nop</artifactId>
+			<version>1.7.5</version>
 		</dependency>
 	</dependencies>
 	<repositories>
